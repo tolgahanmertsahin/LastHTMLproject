@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alıştırma</title>
+        <meta name="author" content="TolgahanMertŞahin">
+        <meta name="description" content="Bu benim temize çektiğim site.">
+        <link rel="icon" href="img/Assassins_creed_logo.png" type="image/x-icon">
+        <style>
+            p {
+                color: rgb(61, 25, 105);
+            }
+        </style>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>HTML tam sürüm öğrenilenler</h1>
+                    <p style> Bu sayfada amaçladığımız şey html5'de bugüne kadar öğrendiklerimizi tamamiyle işlemek.
+                    </p>
+            </header>
+            <hr>
+            <aside>
+            <h3>Linklere buradan ulaşabilirsiniz</h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#plan">Çalışma planı için buradan. (Tablo)</a>
+                        </li>
+                        <li>
+                            <a href="#bilmece">Bilmecemize ulaşabilirsiniz. (details ve summary)</a>
+                        </li>
+                        <li>
+                            <a href="#logo">Logomuz için buradan. (Fotoğraf koyma)</a>
+                        </li>
+                        <li>
+                            <a href="#liste">Açtığımız liste denemeleri(ol>li*5>lorem4)
+                            </a>
+                        </li>    
+                        <li>
+                            <a href="#sınıf">Basit sınıflandırma örneği için.</a>
+                        </li>
+                        <li>
+                            <a href="#adres">Adres bilgilerim için.</a>
+                        </li>
+                        <li>
+                            <a href="#ulaşım">Bana ve diğer linklere ulaşmak için.</a>
+                        </li>    
+                        <li>    
+                            <a href="about.html" target="_blank">Hakkında sayfasına direkt gitmek için buradan. (Relative anchor denemesi)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=kUMe1FH4CHE&ab_channel=freeCodeCamp.org" target="_blank">Youtube linki için buradan. (Absolute anchor)
+                            </a>
+                        </li>    
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+        <hr>
+        <div id="plan">
+                <h2>Öncelikle Günlük Planımızı yapalım
+                </h2>
+                <table>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th scope="col">Saatler</th>
+                        <th scope="col">Etkinlikler</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Sabah
+                        </th>
+                        <td>
+                            <time datetime="09:00">9am</time> - <time datetime="11:00">11am</time>
+                        </td>
+                        <td>Uyanma</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Öğle
+                        </th>
+                        <td><time datetime="11:00">11am</time>-<time datetime="13:00">13am</time></td>
+                            <td>Çalışmaya Başladık</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            İkindi
+                        </th>
+                        <td><time datetime="13:00">13pm</time>-<time datetime="15:00">15pm</time></td>
+                        <td>Dinlenme</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Akşam Üzeri
+                        </th>
+                        <td><time datetime="15:00">15pm</time>-<time datetime="17:00">17pm</time></td>
+                        <td>Çalışma</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Akşam
+                        </th>    
+                        <td><time datetime="17:00">17pm</time>-<time datetime="19:00">19pm</time></td>
+                        <td>Spor</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"> <strong>
+                                Bu plana uyduğum taktirde seneye canavarım.
+                            </strong>
+                            </td>
+                        </tr>
+                    </tfoot>
+                    <!--thead tbody veya tfoot semantic olduğu için koymayı denedim. ama hata aldım. sebebi tr nin içine koymaya çalışmamdı halbuki tr nin dışına koymalıydım. yanısıra captionu sona eklemeyi denediğimde gördüm ki sadece başa caption ekleyebiliyorum. sona eklemek için td ve colspani ne kadar row varsa o kadar yapmalıyım. bu şekilde table ile ilgili sorunumuz kalmamış oldu.-->
+                </table>
+            </div>
+            <hr>
+            <div id="bilmece">
+                <h3>Bildiğimiz diğer kuralları tekrarlayalım
+                </h3>
+                    <details>
+                            <summary>
+                                Bir fili buzdolabına nasıl sokarız?
+                            </summary>
+                            <p>Buzdolabını açıp fili koyarak.</p>
+                    </details>
+            </div> <!--burada paragrafı detailsin içine koymak gerekiyor-->
+            <hr>
+            <div id="logo">
+                <h3>Sıra diğer kısımlarda</h3>
+                <figure>
+                    <img src="img/Assassins_creed_logo.png" alt="icon logomuz" width="120"
+                    title="Sitemizde kullanılan logo.">
+                    <figcaption>
+                        Assassin's Creed oyununun logosu.
+                        <br><a href="img/Assassins_creed_logo.png" download>İndirmek için..</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <hr>
+            <div id="liste">
+                <h3>
+                    Sırada liste denememiz var.
+                </h3>
+                <ol>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>At quod voluptatem iure.</li>
+                    <li>Necessitatibus cupiditate recusandae ullam?</li>
+                    <li>Tempore facere amet veniam!</li>
+                    <li>Obcaecati autem ex vitae!</li>
+                </ol> <!--ol>li*5>lorem4 girdim-->
+            </div>
+            <hr>
+            <div id="sınıf">
+                <h3>
+                    Sınıflandırma zamanı dl-dt-dd
+                </h3>
+                    <dl>
+                        <dt>
+                            Tolgahan Mert Şahin
+                        </dt>
+                        <dd>
+                            Ankara
+                        </dd>
+                        <dd>
+                            22 yaşında.
+                        </dd>
+                        <dt>
+                            Tunahan Mert Şahin
+                        </dt>
+                        <dd>
+                            Ankara
+                        </dd>
+                        <dd>
+                            16 yaşında
+                        </dd>
+                    </dl>
+            </div>
+            <hr>
+            <div id="adres">
+                <figure>
+                    <img src="img/a2bfbfce-bd7c-444c-98d0-fe7ee82a1fa8.jpg" alt="Bosphorus konutları" title="Bosphorus Ankara" width="400">
+                    <figcaption>
+                        Yapının bir yüzü Kaplan Caddesi'ne, diğer yüzü ise İstanbul Yolu'na bakmaktadır.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/c3289292-91e5-4f65-8d4b-8436297c86cc.jpg" alt="Bosphorus konutları" title="Bosphorus Ankara" width="400">
+                    <figcaption>
+                        9 katlı yapının en üst katı çatı dubleksidir.
+                    </figcaption>
+                </figure>
+                <h3>
+                    Adres Bilgilerim
+                </h3>
+                    <address>
+                        Şehit Osman Avcı Mahallesi
+                        <br>Kaplan Caddesi
+                        <br>Bosphorus Konutları 
+                        <br>B2:42
+                        <br>Etimesgut
+                        <br>Ankara
+                    </address>
+            </div>
+            <hr>
+            <div id="ulaşım">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Yukarı dönmek için tıklayınız.</a>
+                        </li>
+                        <li>
+                            <a href="about.html" target="_blank">Benimle ilgili bilgiler için.</a>
+                        </li>
+                        <li>
+                        Bana <a href="mailto:tolgahan111mert@gmail.com">buradan</a> ulaşabilirsiniz.
+                        </li>
+                        <li>
+                            Veya <a href="tel:+905312362440">buradan</a> arayabilirsiniz.
+                        </li>
+                        <li>
+                            Logo olarak kullanılan AC sembolü <a href="img/Assassins_creed_logo.png" download>indirme</a> linki.
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+            <div>
+                <h3>
+                    Bana Ulaşın!
+                </h3>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Kişisel Bilgiler</legend>
+                        <!--fieldset ne bakıcaz>> formun etrafına çit çekiyormuş 
+                        Legend ise başlık atıyor-->
+                        <p>
+                            <label for="isim">İsim:</label>
+                            <input type="text" name="İsim" id="İsim" placeholder="Buraya ilk isminizi giriniz." autocomplete="on"
+                            required>
+                        </p>
+                        <!--autofocus da girebilirdik ama istemiyorum öyle bi şey-->
+                        <p>    
+                            <label for="soyisim">Soyisim:</label>
+                            <input type="text" name="Soyisim" id="Soyisim" placeholder="Buraya soyadınızı giriniz." autocomplete="on"
+                            required>
+                        </p>
+                        <p>    
+                            <label for="şifre">Şifre:</label>
+                            <input type="password" name="Şifre" id="Şifre" placeholder="Şifrenizi düzenli olarak güncelleyin." autocomplete="off"
+                            required>
+                        </p>
+                        <!--Password girince noktalandı hemen-->
+                        <p>    
+                            <label for="telefonnumarası">Numara:</label>
+                            <input type="tel" name="telefonnumarası" id="telefonnumarası" placeholder="531-858-4444" autocomplete="off" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                            required>
+                        </p>
+                        <p>    
+                            <label for="doğumyılı">Doğum Yılınız:</label>
+                            <input type="number" name="doğumyılı" id="doğumyılı" min="1948" max="2010" step="1" value="1997">
+                        </p>
+                        <p>
+                            <label for="sevilenders">En Sevdiğiniz Ders:</label>
+                            <select name="sevilenders" id="sevilenders" multiple size="3"><!--Ekranda kaçını göstereceğini seçiyor size ile-->
+                                <optgroup label="Dersler">
+                                <option value="Türkçe">Türkçe</option>
+                                <option value="mat">Matematik</option>
+                                <option value="ing">İngilizce</option>
+                                <option value="beden">Beden Eğitimi</option>
+                                <option value="fen">Fen Bilimleri</option>
+                                <option value="sosyal">Sosyal Bilimler</option>
+                                <option value="diğer">Diğer</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="sevilenders">En Sevdiğiniz Ders:</label>
+                            <input type="text" name="sevilenders" id="sevilenders" list="Dersler">
+                            
+                                <datalist id="Dersler">
+                                    <option value="Türkçe">
+                                    <option value="Matematik">
+                                    <option value="İngilizce">
+                                    <option value="Beden Eğitimi">
+                                    <option value="Fen Bilimleri">
+                                    <option value="Sosyal">
+                                    <option value="Diğer">
+                                    </datalist>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Favori Yemeğiniz?</legend>
+                        <p>
+                            <input type="radio" name="yemek" id="evyemeği" value="evyemeği">
+                            <label for="evyemeği">Ev Yemeği</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="yemek" id="hamburger" value="hamburger">
+                            <label for="hamburger">Hamburger</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="yemek" id="Pizza" value="Pizza">
+                            <label for="Pizza">Pizza</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>alıştırma kısmı</legend>
+                            <label for="kahve">En sevdiğiniz diğer kahve nedir?</label>
+                            <input type="text" name="kahve" id="kahve" list="kahve-listesi">
+                            <datalist id="kahve-listesi">
+                                <option value="düz kahve"></option>
+                                <option value="latte"></option>
+                                <option value="flat white"></option>
+                                <option value="oldu mu"></option>
+                            </datalist>
+                    </fieldset>
+                    <fieldset>
+                        <legend>radio alıştırması</legend>
+                        <p>
+                            <input type="radio" name="kahve" id="flat white" value="flat white">
+                            <label for="flat white">flat White</label>
+                        </p>
+                        <p>    
+                            <input type="radio" name="kahve" id="cortado" value="cortado">
+                            <label for="cortado">cortado</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Evcil Hayvanınız Var mı?</legend>
+                        <input type="checkbox" name="evcil" id="var" value="var">
+                        <br>
+                        <label for="hayvanlar">Varsa hangi hayvanınız/hayvanlarınız var?</label>
+                        <br>
+                        <input type="text" name="hayvanlar" id="hayvanlar" list="hayvan">
+                        <datalist id="hayvan">
+                            <option value="köpek">köpek</option>
+                            <option value="kedi">kedi</option>
+                            <option value=""></option>
+                        </datalist>
+                    </fieldset>
+                    <!--şimdi yeni bi deneme-->
+                    <fieldset>
+                        <legend>Evcil Hayvanınız Var mı?</legend>
+                        <input type="checkbox" name="evcil" id="var" value="var">
+                        <br>
+                        <label for="hayvanlar1">Varsa hangi hayvanınız/hayvanlarınız var?</label>
+                        <br>
+                        <select name="hayvanlar1" id="hayvanlar1" multiple size="2">
+                            <optgroup>
+                            <option value="köpek">köpek</option>
+                            <option value="kedi">kedi</option>
+                            <option value="balık">balık</option>
+                        </optgroup>
+                    </select>
+                    </fieldset>
+                    <br>
+                    <hr>
+                    <fieldset>
+                        <legend>
+                            Bana bir mesaj yolla
+                        </legend>
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="40" rows="7" placeholder="Mesajınız..."></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <hr>
+                    <!--yukarda önce label sonra input girdik burada tam tersi-->
+                    <!--aynı şekilde radio girdiğimiz için seçenek çıktığını tahmin ediyorum-->
+                    <!--ve tabii ki name olan yemeği değiştirirsek birden fazla seçmemize izin veriyor-->
+                </form>
+
+            </div>
+            <footer>
+                Tolgahan Mert Şahin &copy; - 22 Aralık 2022
+                <br>Her Hakkı Saklıdır.
+            </footer>
+    </body>
+    <!--25 hatamız var! Şimdi onları çözmeye ayırıcaz.-->
+    <!--İlk hata:Stray end tag hatası almışız. h1 boş kalmış kaldırdım gitti.-->
+    <!--ikinci olarak tbody den çok hata almışız th nin ya da td nin içinde thead tbody olmuyo ilerde bakıcam buna. bunu düzeltince iki hata kaldı.-->
+    <!--img de align kullanılmaz diyor. obsolete yani eskiymiş. onun yerine css kullan diyo. neyse sildim gitti.-->
+    <!--figcaption figure un elemanı değil diyor.????
+    çözdüm. her fotoğraf için ayrı figür girilmeli. tertemiz yeşil.:)-->
+    <!--THEAD TBODY İÇİNE TD TH GİRİYO ONLAR ÖNCE SONRA DİĞERLERİ-->
+</html>
